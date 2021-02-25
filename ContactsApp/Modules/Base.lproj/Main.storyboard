@@ -221,16 +221,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wex-o1-pBw">
-                                                    <rect key="frame" x="117" y="0.5" width="180" height="179"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wex-o1-pBw">
+                                                    <rect key="frame" x="132" y="10.5" width="150" height="149"/>
                                                     <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="180" id="Ekt-WL-MhG"/>
-                                                        <constraint firstAttribute="height" constant="180" id="fGg-hN-DSt"/>
+                                                        <constraint firstAttribute="width" secondItem="Wex-o1-pBw" secondAttribute="height" multiplier="1:1" id="4ln-hG-uVz"/>
+                                                        <constraint firstAttribute="width" constant="150" id="Ekt-WL-MhG"/>
+                                                        <constraint firstAttribute="height" constant="150" id="fGg-hN-DSt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzq-B4-8o4">
-                                                    <rect key="frame" x="171" y="170" width="72" height="30"/>
+                                                    <rect key="frame" x="171" y="164" width="72" height="30"/>
                                                     <state key="normal" title="Add Photo"/>
                                                     <connections>
                                                         <action selector="addPhoto:" destination="Esf-rR-F05" eventType="touchUpInside" id="HxG-Z4-8pa"/>
@@ -239,9 +240,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="tzq-B4-8o4" firstAttribute="centerX" secondItem="pO0-Z1-463" secondAttribute="centerX" id="Pbh-Vu-F8b"/>
-                                                <constraint firstItem="tzq-B4-8o4" firstAttribute="top" secondItem="pO0-Z1-463" secondAttribute="top" constant="170" id="Yy7-jd-W42"/>
+                                                <constraint firstItem="tzq-B4-8o4" firstAttribute="top" secondItem="Wex-o1-pBw" secondAttribute="bottom" constant="4" id="Yy7-jd-W42"/>
                                                 <constraint firstItem="Wex-o1-pBw" firstAttribute="centerX" secondItem="pO0-Z1-463" secondAttribute="centerX" id="k4V-Pw-ZEx"/>
-                                                <constraint firstItem="Wex-o1-pBw" firstAttribute="top" secondItem="pO0-Z1-463" secondAttribute="top" id="n7g-WO-Xzc"/>
+                                                <constraint firstItem="Wex-o1-pBw" firstAttribute="top" secondItem="pO0-Z1-463" secondAttribute="top" constant="10" id="n7g-WO-Xzc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

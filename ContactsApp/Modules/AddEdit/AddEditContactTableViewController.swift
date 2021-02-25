@@ -118,6 +118,7 @@ class AddEditContactTableViewController: UITableViewController, UISearchTextFiel
         contact.notes = notesTextView.text
         
         NotificationCenter.default.post(name: .updateContact, object: contact)
+        mockContacts.append(contact)
         dismiss(animated: true)
     }
     

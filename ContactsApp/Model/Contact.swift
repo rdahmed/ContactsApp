@@ -61,14 +61,14 @@ var mockContacts: [Contact] = {
     var contact1 = Contact()
     contact1.firstName = "Ahmed"
     contact1.lastName = "Fathi"
-    contact1.mobile = "01124766881"
+    contact1.mobile = "0112345678"
     contact1.email = "ahmedfathi680@gmail.com"
     contacts.append(contact1)
     
     var contact2 = Contact()
     contact2.firstName = "Radwa"
     contact2.lastName = "Ahmed"
-    contact2.mobile = "01122014499"
+    contact2.mobile = "0112233445"
     contacts.append(contact2)
     
     return contacts
